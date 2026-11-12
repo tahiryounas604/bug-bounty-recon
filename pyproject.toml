@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bug-bounty-recon"
+version = "0.1.0"
+description = "One-command recon for authorized bug-bounty targets: subdomains, live hosts, ports, nuclei, Markdown/JSON report."
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+recon = "recon.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
